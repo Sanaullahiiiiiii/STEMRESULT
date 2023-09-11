@@ -1,0 +1,324 @@
+
+    
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student Marks</title>
+
+
+      <style>
+
+        .header{
+           border-radius: 2cm;
+           border-color: #0056b3;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image\ \(1\).png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color:white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+    
+        }
+
+    
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    display: none; /* Initially hide the table */
+    background-color: black; /* Change the table background color */
+    color: #333; /* Change the table text color */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #333;
+    background: #333;
+}
+
+        th, td {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color:black;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            font-size: 18px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .overlay {
+                padding: 20px;
+            }
+            label {
+                font-size: 20px;
+            }
+            input[type="text"] {
+                font-size: 16px;
+            }
+            button {
+                font-size: 16px;
+            }
+            th {
+                font-size: 18px;
+            }
+            td {
+                font-size: 16px;
+            }
+        }
+
+
+       /* Responsive Styles for Tablets */
+       @media (max-width: 768px) {
+            body {
+                /* Adjust body styles for tablets here */
+                font-size: 16px;
+            }
+
+            .overlay {
+                /* Adjust overlay styles for tablets here */
+                max-width: 80%;
+            }
+
+            label {
+                /* Adjust label styles for tablets here */
+                font-size: 20px;
+            }
+
+            input[type="text"] {
+                /* Adjust input styles for tablets here */
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                /* Adjust button styles for tablets here */
+                font-size: 16px;
+            }
+
+            table {
+                /* Adjust table styles for tablets here */
+                width: 80%;
+                margin-top: 20px;
+            }
+
+            th {
+                /* Adjust th styles for tablets here */
+                font-size: 18px;
+            }
+
+            td {
+                /* Adjust td styles for tablets here */
+                font-size: 16px;
+            }
+
+            /* You can continue to modify other styles as needed for tablets */
+        }
+
+
+
+        marquee {
+            position: fixed;
+            top:0;
+            left: 90;
+            width: 100%;
+            
+
+            font-size: 24px; /* You can adjust the font size as needed */
+            color: #f9f9f9;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+           
+        }
+
+        .bf{
+                position: flex;
+                
+        }
+      
+    </style>
+
+
+      </head>
+         
+  <body  background="image (1).png">  
+  
+    
+    
+    <marquee>This result of "Science Technology, English and Mathematics" (STEM) Contest  is uploaded by Indus Youth Welfare Organization held on 3, September 2023 </marquee>
+  
+         
+  
+      <div class="container">
+          <label for="rollNumber">Enter STEM Roll Number:</label>
+          <input type="text" id="rollNumber">
+          <div id="bf"><button onclick="displayMarks()">Show Marks</button>
+  
+           <button type="button" id="btnExport" value="Export">Print PDF</button> </div>
+
+
+
+           <table> 
+            
+            
+            <tr>
+
+           <a href="https://www.instagram.com/direct/t/17846240711893054" style="background-color:blue;"> <i style="font-size: medium;"><i style="color: #ccc;"  >Contact with Team</i></i></a>
+ 
+            </tr>
+            
+            
+            <tr>
+  
+          <table id="tblCustomers">
+              
+                 
+  
+  
+                  <tr>    
+                     
+                      
+                      <th colspan="3" style="font-family:'Arial', sans-serif; "> <img src="  FB_IMG_1694111025238.jpg" alt="" width="50" height="50" style="border-radius: 5ch;">INDUS YOUTH WELFARE ORGANIZATION</th>
+                      
+                  </tr>
+
+
+                  <tr>    
+                    
+                    <th colspan="3"> STEM Score Card</th>
+                </tr>
+                  
+                  <tr> 
+                      <th>Student</th>
+                      <th>Info</th>
+                  </tr>
+                  
+                  <tr>
+                      <td>Name</td>
+                      <td id="nameOutput"></td>
+                  </tr>
+      
+                  <tr>
+                      <td>Father Name</td>
+                      <td id="schoolOutput"></td>
+                  </tr>
+    
+                  <tr>
+                    <td>School Name</td>
+                    <td id="institute"></td>
+                </tr>
+
+                <tr>
+                    <td>Category</td>
+                    <td id="at"></td>
+                </tr>
+                 
+                 
+
+      
+                  <tr>
+                      <th>Subject</th>
+                      <th>Marks</th>
+                  </tr> 
+                  <tr>
+                      <td>Science</td>
+                      <td id="scienceMarks"></td>
+                  </tr>
+                  <tr>
+                      <td>Mathematics</td>
+                      <td id="mathMarks"></td>
+                  </tr>
+                  <tr>
+                      <td>English</td>
+                      <td id="englishMarks"></td>
+                  </tr>
+                  
+                  <tr>
+                      <td>Obtained Marks</td>
+                      <td id="totalmarks"></td>
+                  </tr>
+                  
+                  <tr>
+                      <td>Percentage</td>
+                      <td id="percentage"></td>
+                  </tr>
+  
+             
+              </table>
+
+
+              
+          </div>
+          </tr>
+
+          
+
+
+      
+
+      <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="s.js"></script>
+
+      </body>
